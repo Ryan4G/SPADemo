@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+  <head>
+    <title>SPA Starter</title>
+
+    <link rel="stylesheet" href="css/spa.css" type="text/css"/>
+    <link rel="stylesheet" href="css/spa.shell.css" type="text/css"/>
+    
+    <script type="text/javascript" src="js/jq/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/jq/jquery.uriAnchor.js"></script>
+    
+    <script type="text/javascript" src="js/spa.js"></script>
+    <script type="text/javascript" src="js/spa.shell.js"></script>
+    
+    <script type="text/javascript">
+      
+      // Start SPA once DOM is ready
+      // The same to 'jQuery(document).ready()'
+      jQuery(
+        function (){
+          spa.initModule(jQuery('#spa'));
+        }
+      );
+      
+    </script>
+  </head>
+  <body>
+    <div id="spa">
+    </div>
+  </body>
+</html>

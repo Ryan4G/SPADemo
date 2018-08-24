@@ -1,0 +1,12 @@
+{
+  "name": "SPA",
+  "version": "0.0.3",
+  "private": true,
+  "dependencies": {
+    "bson": "^2.0.6",
+    "express": "3.2.x",
+    "mongodb": "^3.0.8",
+    "socket.io": "0.9.x",
+    "JSV": "4.0.x"
+  }
+}

@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- ie9+ rendering support for latest standards -->
+    <meta http-equiv="content-type" content="text/html; charset=gb2312"/>
+    <meta http-equiv="X-UA-Compatible" cpntent="IE=edge"/>
+    <title>SPA Charpter 9</title>
+
+    <link rel="stylesheet" href="css/spa.css" type="text/css"/>
+    <link rel="stylesheet" href="css/spa.shell.css" type="text/css"/>
+    <link rel="stylesheet" href="css/spa.chat.css" type="text/css"/>
+    <link rel="stylesheet" href="css/spa.avtr.css" type="text/css"/>
+    
+    <script type="text/javascript" src="socket.io/socket.io.js"></script>
+    <script type="text/javascript" src="js/lib/taffy-min.js"></script>
+    <script type="text/javascript" src="js/jq/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/jq/jquery.uriAnchor.js"></script>
+    <script type="text/javascript" src="js/jq/jquery.event.gevent.js"></script>
+    <script type="text/javascript" src="js/jq/jquery.event.ue.js"></script>
+    
+    <script type="text/javascript" src="js/spa.js"></script>
+    <script type="text/javascript" src="js/spa.util.js"></script>
+    <script type="text/javascript" src="js/spa.data.js"></script>
+    <script type="text/javascript" src="js/spa.fake.js"></script>
+    <script type="text/javascript" src="js/spa.model.js"></script>
+    
+    <script type="text/javascript" src="js/spa.util_b.js"></script>
+    <script type="text/javascript" src="js/spa.shell.js"></script>
+    <script type="text/javascript" src="js/spa.chat.js"></script>
+    <script type="text/javascript" src="js/spa.avtr.js"></script>
+    
+    <script type="text/javascript">
+      
+      // Start SPA once DOM is ready
+      // The same to 'jQuery(document).ready()'
+      jQuery(
+        function (){
+          try
+          {
+            spa.initModule(jQuery('#spa'));
+          }
+          catch(error){
+            // log the error
+          }
+        }
+      );
+
+      window.onerror = function(error){
+        //do something with asynchronous errors
+      }
+			
+    </script>
+  </head>
+  <body>
+    <div id="spa">
+    
+    
+    </div>
+  </body>
+</html>
